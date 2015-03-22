@@ -55,6 +55,7 @@ class Evaluator:
         figure = plt.figure()
         for i, policy in enumerate(self.policies):
             plt.plot(self.getRegret(i, environment), label=str(policy))
+        plt.legend()
         plt.show()
 
 def play(env, policy, horizon):
